@@ -1,0 +1,116 @@
+/* styles.css */
+/* Existing styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 255, 0.2); /* Light blue background with opacity */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease-in-out;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Responsive design for tablets and mobile devices */
+
+/* Tablets in portrait mode */
+@media (max-width: 768px) {
+    .weather-app {
+        padding: 15px;
+        width: 90%;
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}
+
+/* Mobile phones in portrait and landscape mode */
+@media (max-width: 480px) {
+    .weather-app {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    input[type="text"], button {
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
